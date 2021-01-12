@@ -2,5 +2,36 @@
 
 p {
   margin-top: 0;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.rubrik{
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 130%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  color: #AEADAD;
+
+  margin-top: 10px;
+}
+
+.Zeitangabe {
+  font-family: Source Sans Pro;
+  font-style: italic;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #AEADAD;
+  float: left;
+  padding-left: 5px;
+  margin-bottom: 0;
+}
+
+.Mengen {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 0;
 }
