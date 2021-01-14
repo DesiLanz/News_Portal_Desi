@@ -43,14 +43,22 @@ div[class^="card-"] {
   z-index: 1;
   align-self: flex-end;
 }
+.Kommentar-Oben {
+  grid-column: span 1;
+  z-index: 1;
+  align-self: top;
+  margin-top: 1rem;
+}
 
 .Rubrik-grid {
   grid-column: span 7;
+  align-self: flex-end;
+
 }
 
 .HL-Hauptteaser {
-  margin-top: -30px;
   grid-column: span 7;
+  
 }
 
 .GS-Hauptteaser{
@@ -69,19 +77,42 @@ div[class^="card-"] {
 }
 
 .HL-Teaser {
-  margin-top: -30px;
   grid-column: span 7;
 }
+
+.HL-Teaser-kolumne {
+  grid-column: span 7;
+}
+
 .GS-Teaser{
   grid-column-start: 2;
   grid-column-end: span 7;
 }
+.GS-Teaser-kolumne{
+  grid-column-start: 2;
+  grid-column-end: span 6;
+}
+
 
 .Werbung {
   width: 60vw;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
+
+
+.informiert {
+  grid-column: span 8;
+}
+
+
+
+
+
+
+
 
 .column-12 {
   grid-column: span 8;
