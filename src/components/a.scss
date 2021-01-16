@@ -1,14 +1,116 @@
 // Link Handling
 
+// a {
+//   text-decoration: none;
+//   color: red;
+// }
+
+// a:visited {
+//   color: green;
+// }
+
+// a:hover {
+//   color: inherit;
+// }
+
+
+//Header
 a {
   text-decoration: none;
-  color: red;
+  color: white;
+  border-bottom: 2px solid transparent;
 }
 
-a:visited {
-  color: green;
-}
-
+a.nav__item--active,
 a:hover {
-  color: inherit;
+  color: #F25022;
+}
+a:hover {
+  border-color: #F25022;
+}
+a.nav__item--active {
+  border-color: #F25022;
+}
+/* column */
+.container2 {
+  font-family: 'Piazzolla', serif;
+  font-weight: 400;
+  width: 92%;
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2D2C2A ;
+}
+
+/* compensate for header */
+.container2--first-content {
+  margin-top: 5rem;
+}
+
+/* header doesn't scroll */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #2D2C2A;
+  height: 3rem;
+}
+
+/* center the navigation in height */
+.container2--nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* whole heigth */
+.nav {
+  position: relative;
+  width: 100%;
+}
+
+/* the gradient right */
+.nav:after {
+  content: "";
+  width: 1.25em;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(45, 44, 42, 0),
+    rgba(45, 44, 42, 1)
+  );
+}
+/* scroll-area */
+.nav__inner {
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  width: 100%;
+  scrollbar-width: none; /* no-scrollbar: firefox */
+}
+.nav__inner::-webkit-scrollbar {
+  display: none; /* no-scrollbar: Safari and Chrome */
+}
+
+/* at the end of the list we add space*/
+.nav__inner:after {
+  display: block;
+  content: "";
+  width: 1.25em;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 1.25em;
+}
+
+/* don't wrap within the items */
+.nav__item {
+  white-space: nowrap;
+}
+
+/* space between the items */
+.nav__item + .nav__item {
+  margin-left: 1.25em;
 }
