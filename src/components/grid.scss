@@ -102,13 +102,24 @@ div[class^="card-"] {
   margin-bottom: 3rem;
 }
 
-
+//Footer
 .informiert {
   grid-column: span 8;
 }
 
+.spalte-1 {
+  grid-column: span 3;
+}
+.spalte-2 {
+  grid-column: span 4;
+}
 
-
+.SOME {
+  grid-column: span 8;
+  display: flex;
+  // align-items: center;
+  margin-bottom: 1.5em;
+}
 
 
 

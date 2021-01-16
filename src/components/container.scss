@@ -25,5 +25,55 @@ hr {
 
 .Footer {
   background-color: #2D2C2A;
-  margin-top: 10rem;
+  margin-top: 5rem;
+}
+form {
+  grid-column: span 8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  /* reset browser stuff */
+  width:100%;
+  box-shadow: none;
+  text-shadow: none;
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+  box-sizing: border-box;
+  /* style */
+  padding: 0.6em 1em;
+  // border-radius: 0em;
+  // border: 0px solid;
+  border: none;
+  outline: none;
+}
+
+// // input:focus {
+// //   outline: 0 !important;
+// //   border-color: #bb0000;
+// }
+button {
+  width: 100%;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  box-sizing: border-box;
+  transition: .3s;
+  // background: #ddd;
+  border: none;
+  outline: none;
+  padding: 0.6em 1em;
+  // border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  background: #F25022;
+  color: #fff;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+button:hover {
+  background: #72ff56;
 }
