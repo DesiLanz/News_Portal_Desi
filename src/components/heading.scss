@@ -54,3 +54,10 @@ h3 {
   color: white;
   letter-spacing: 0.04em;
 }
+
+h4 {
+  font-family: 'Piazzolla', serif;
+  font-weight: bold;
+  font-size: 1.8rem * $font-scale--default * $font-scale--default;
+  
+}

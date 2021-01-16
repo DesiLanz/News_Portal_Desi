@@ -14,20 +14,20 @@
 // }
 
 
-//Header
+//Navigations Bar 
 a {
   text-decoration: none;
   color: white;
-  border-bottom: 2px solid transparent;
+  // border-bottom: 2px solid transparent;
 }
 
 a.nav__item--active,
 a:hover {
   color: #F25022;
 }
-a:hover {
-  border-color: #F25022;
-}
+// a:hover {
+//   border-color: #F25022;
+// }
 a.nav__item--active {
   border-color: #F25022;
 }
