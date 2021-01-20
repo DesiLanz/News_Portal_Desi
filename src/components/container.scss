@@ -23,6 +23,14 @@ hr {
   margin-top: -1em;
 }
 
+.weisseLinie{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  border-top: 1px solid white;
+}
+
 .Footer {
   background-color: #2D2C2A;
   margin-top: 5rem;
@@ -74,7 +82,20 @@ button {
   margin-top: 0.5em;
   margin-bottom: 1em;
 }
+
 button:hover {
   background: #72ff56;
 }
 
+.Anm {
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 3rem;
+  display: flex;
+}
+
+.wetter-weiss{
+  position: absolute;
+  right: 1.5rem;
+  top: 5rem;
+}

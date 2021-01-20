@@ -159,14 +159,18 @@ a.nav__item--active {
 #menuToggle a
 {
   text-decoration: none;
-  color: #232323;
+  color: white;
+  font-family: Piazzolla;
+  font-weight: 600;
+  font-size: 22px;
+
   
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover
 {
-  color: tomato;
+  color: #F25022;
 }
 
 
@@ -228,7 +232,7 @@ a.nav__item--active {
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: white;
 }
 
 /*
@@ -254,10 +258,13 @@ a.nav__item--active {
  */
 #menu
 {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  margin: -100px 0 0 -8px;
+  margin: 0;
+  // margin: -100px 0 0 -8px;
   padding: 50px;
   padding-top: 125px;
   
