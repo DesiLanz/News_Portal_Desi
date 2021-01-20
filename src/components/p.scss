@@ -58,3 +58,17 @@ p {
   letter-spacing: 0.06em;
   line-height: 220%;
 }
+
+.Datum{
+  display: none;
+  @include media(m) {
+    display: block;
+  font-family: Source Sans Pro;
+  font-weight: 500;
+  color: #F25022;
+  text-align: center;
+  font-size: 13px;
+  margin-left: -2.5rem;
+  margin-top: -1.15rem;
+  }
+}
