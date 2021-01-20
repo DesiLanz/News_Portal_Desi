@@ -1,8 +1,14 @@
 // Hauptspalte
 .container {
   width: 90.4%;
-  max-width: 42rem;
+  // max-width: 42rem;
   margin: 0 auto; // center
+  @include media(m){
+    width: 96%;
+    margin: 0 auto; // center
+
+
+  }
 }
 
 hr {
@@ -98,4 +104,21 @@ button:hover {
   position: absolute;
   right: 1.5rem;
   top: 5rem;
+}
+
+.Wetterwidget{
+  display: none;
+
+  @include media(m){
+    // display: block;
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    }
+}
+
+.box1{
+  display: flex;
+  margin: 0;
 }

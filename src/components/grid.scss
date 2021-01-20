@@ -6,7 +6,9 @@
   grid-column-gap: 4.8%;
 
   @include media(m) {
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(14, 1fr);
+    grid-column-gap: 2.5%;
+
   }
 
   // visualisierung der Columns
@@ -28,41 +30,93 @@ div[class^="card-"] {
     min-height: 3rem;
   }
 }
+
+.Titelbild{
+  grid-column: span 8;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  margin-top: 5.8rem;
+
+  @include media (m) {
+    grid-column-start: 2;
+    grid-column-end: span 10;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 12rem;
+  }
+
+}
+
+
+
 .Linie {
   grid-column: span 7;
   margin-left: -20px;
+
+  @include media (m) {
+    margin-left: 0px;
+
+  }
 }
 .like {
   padding-top: 10px;
   grid-column: span 1;
   align-self: flex-end;
+
+  @include media (m){
+    display: none;
+  }
 }
 
 .Kommentar {
   grid-column: span 1;
   z-index: 1;
   align-self: flex-end;
+
+  @include media (m){
+    display: none;
+  }
+  
 }
 .Kommentar-Oben {
   grid-column: span 1;
   z-index: 1;
   align-self: top;
   margin-top: 1rem;
+
+  @include media (m){
+    display: none;
+  }
 }
 
 .Rubrik-grid {
   grid-column: span 7;
   align-self: flex-end;
 
+  @include media (m) {
+    grid-column-start: 2;
+    grid-column-end: span 8;
+    align-self: flex-end;
+  }
+
 }
 
 .HL-Hauptteaser {
   grid-column: span 7;
+
+  @include media (m) {
+    grid-column-start: 2;
+    grid-column-end: span 8;
+  }
   
 }
 
 .GS-Hauptteaser{
   grid-column: span 7;
+  @include media (m) {
+    grid-column-start: 2;
+    grid-column-end: span 8;
+  }
 }
 
 .aktualitaet {
@@ -74,25 +128,50 @@ div[class^="card-"] {
   grid-column: span 6;
   margin-top: 60px;
   margin-left: -20px;
+
+  @include media (m) {
+      grid-column: span 6;
+      margin-top: 60px;
+
+  }
 }
 
 .HL-Teaser {
   grid-column: span 7;
+
+  @include media (m) {
+      grid-column: span 6;
+
+    }
 }
+
+
 
 .HL-Teaser-kolumne {
   grid-column: span 7;
 }
 
 .GS-Teaser{
-  grid-column-start: 2;
-  grid-column-end: span 7;
+  grid-column: span 6;
+
+
+  @include media (m) {
+    grid-column: span 6;
+
 }
+}
+
 .GS-Teaser-kolumne{
   grid-column-start: 2;
   grid-column-end: span 6;
 }
 
+.leer{
+  grid-column: span 1;
+  @include media (m) {
+  display:none;
+}
+}
 
 .Werbung {
   width: 60vw;
