@@ -17,6 +17,11 @@ hr {
   margin-right: auto;
   border: 0;
   border-top: 5px solid #000000;
+
+  @include media(m){
+    border-top: 10px solid #000000;
+
+  }
 }
 
 .Titel-Orange {
