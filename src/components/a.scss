@@ -175,6 +175,8 @@ a.nav__item--active {
 
 
 
+
+
 //Burger-Menu
 
 #menuToggle
@@ -311,6 +313,10 @@ a.nav__item--active {
   transform: translate(-100vw, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+  @include media (m) {
+    width: 20vw;
+  }
 }
 
 #menu li

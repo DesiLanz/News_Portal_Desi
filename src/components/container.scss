@@ -109,12 +109,41 @@ button:hover {
   justify-items: center;
   margin-bottom: 3rem;
   display: flex;
+
+  @include media (m) {
+    margin-top: -8rem;
+    justify-content: flex-end;
+
+
+  }
+}
+
+.mobile {
+  display: block;
+
+  @include media (m) {
+    display:none;
+  }
+}
+
+.desktop {
+  display: none;
+
+  @include media (m) {
+    display: block;
+
+  }
 }
 
 .wetter-weiss{
   position: absolute;
   right: 1.5rem;
   top: 5rem;
+
+  @include media (m) {
+    display: none;
+
+  }
 }
 
 .Wetterwidget{
