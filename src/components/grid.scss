@@ -365,9 +365,10 @@ div[class^="card-"] {
   margin-bottom: 1.5em;
 
   @include media (m) {
-    grid-column-start: 11;
+    grid-column-start: 10;
     grid-column-end: span 4;
     padding-left: 5.2rem;
+    justify-content: flex-end;
   }
 }
 
