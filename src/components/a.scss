@@ -147,7 +147,8 @@ a.nav__item--active {
   overflow-y: hidden;
   display: flex;
   width: 100%;
-  scrollbar-width: none; /* no-scrollbar: firefox */
+  scrollbar-width: none;   /* no-scrollbar: firefox */
+  justify-content: center;
 }
 .nav__inner::-webkit-scrollbar {
   display: none; /* no-scrollbar: Safari and Chrome */

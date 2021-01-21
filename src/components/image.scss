@@ -10,6 +10,11 @@ img {
   height: 14px;
   width: auto;
   float: left;
+
+  @include media (m) {
+    margin-top: 3px;
+    height: 16px;
+  }
 }
 
 .SoMe-Button {
@@ -26,6 +31,13 @@ img {
 .Person-weiss{
   height: 34px;
   width: 34px;
+
+  @include media (m) {
+    height: 30px;
+    width: 30px;
+
+  }
+  
 }
 
 
@@ -38,5 +50,11 @@ img {
   height:12px;
   margin-left: 2.5rem;
   margin-top: 0.3rem;
+
+}
+
+.wetter-icon-desktop{
+  width: 40px;
+  margin:0;
 
 }

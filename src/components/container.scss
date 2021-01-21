@@ -111,8 +111,10 @@ button:hover {
   display: flex;
 
   @include media (m) {
-    margin-top: -8rem;
+    margin-top: -6rem;
     justify-content: flex-end;
+    margin-bottom: 1rem;
+
 
 
   }
@@ -161,4 +163,28 @@ button:hover {
 .box1{
   display: flex;
   margin: 0;
+}
+
+.wetter-weiss-desktop {
+  display: none;
+
+  @include media (m) {
+    display: block;
+    // display: flex;
+    // justify-items: stretch;
+    margin-top: 1rem;
+  }
+}
+
+.rechts-wetter{
+  width: 100%;
+  // justify-self: self-end;
+  justify-content: flex-end;
+}
+
+.strech {
+  // display: flex;
+  justify-items:  start  self-end ;
+  align-content: flex-end;
+
 }

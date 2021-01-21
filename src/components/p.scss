@@ -18,6 +18,11 @@ p {
 
   margin-top: 1.2rem;
   margin-bottom: 0.3rem;
+
+  @include media (m) {
+    font-size: 16px;
+
+  }
 }
 
 .rubrik-kolumne {
@@ -44,6 +49,12 @@ p {
   float: left;
   padding-left: 5px;
   margin-bottom: 0;
+
+  @include media (m) {
+    font-size: 16px;
+    align-items: flex-end;
+
+  }
 }
 
 .Mengen {
@@ -116,6 +127,10 @@ span {
   font-size: 22px;
   padding-top: 2.5rem;
   padding-left: 1rem;
+
+  @include media (m){
+    display:none;
+  }
 }
 
 .ort-weiss{
@@ -127,4 +142,28 @@ span {
   letter-spacing: 0.06em;
   margin-top: -4.5rem;
 
+}
+
+.ort-weiss-desktop{
+  color: white;
+  font-family: Piazzolla;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  margin: 0;
+
+}
+
+.temp-weiss-desktop {
+  display: none;
+  @include media(m) {
+    display: block;
+    font-family: 'Piazzolla', serif;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: right;
+    color: white;
+    margin-top:-2.5rem;
+    
+  }
 }
