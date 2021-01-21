@@ -13,10 +13,10 @@ html {
   letter-spacing: 0.04em;
 
   @include media(m) {
-    font-size: 17px;
+    font-size: 18px;
   }
   @include media(l) {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 

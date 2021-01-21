@@ -173,10 +173,11 @@ div[class^="card-"] {
 
   @include media (m){
   display: block;
-  padding-top: 10px;
+  display: flex;
   grid-column: span 1;
-  align-self: flex-end;
-  width:20px;
+  margin-right: 15px;
+  align-items: center;
+  // width:20px;
   }
 }
 
@@ -187,8 +188,19 @@ div[class^="card-"] {
 
   @include media (m){
     display: none;
-  }
-  
+  } 
+}
+
+.Kommentar-desktop {
+  display: none;
+
+  @include media (m){
+    display: block;
+    display: flex;
+    margin-right: 15px;
+    // grid-column: span 1;
+    align-items: center;
+  }  
 }
 .Kommentar-Oben {
   grid-column: span 1;
@@ -236,9 +248,14 @@ div[class^="card-"] {
   @include media (m) {
     grid-column: span 6;
     display:flex;
-    align-content: flex-end;
+    align-items: center;
 
   }
+}
+
+.zentrieren{
+  align-items: center;
+
 }
 
 .Bild-Teaser {
