@@ -333,21 +333,42 @@ div[class^="card-"] {
 
 //Footer
 .informiert {
-  grid-column: span 8;
+  grid-column-start: 1;
+  grid-column-end: span 8;
+
+  @include media (m) {
+    grid-column-start: 9;
+    grid-column-end: span 5;
+
+  }
 }
 
 .spalte-1 {
   grid-column: span 3;
+  @include media (m) {
+    margin-top: -11rem;
+  }
 }
 .spalte-2 {
   grid-column: span 4;
+
+  @include media (m) {
+    margin-top: -11rem;
+  }
 }
 
 .SOME {
-  grid-column: span 8;
+  grid-column-start: 1;
+  grid-column-end: span 8;
   display: flex;
   // align-items: center;
   margin-bottom: 1.5em;
+
+  @include media (m) {
+    grid-column-start: 11;
+    grid-column-end: span 4;
+    padding-left: 5.2rem;
+  }
 }
 
 

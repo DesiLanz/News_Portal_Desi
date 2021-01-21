@@ -47,10 +47,16 @@ hr {
   margin-top: 5rem;
 }
 form {
-  grid-column: span 8;
+  grid-column-start: 1;
+  grid-column-end: span 8;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include media (m) {
+    grid-column-start: 9;
+    grid-column-end: span 5;
+  }
 }
 
 input {
