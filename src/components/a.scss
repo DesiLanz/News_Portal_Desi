@@ -149,6 +149,7 @@ a.nav__item--active {
   width: 100%;
   scrollbar-width: none;   /* no-scrollbar: firefox */
   // justify-content: center;
+  justify-content: space-between;
 }
 .nav__inner::-webkit-scrollbar {
   display: none; /* no-scrollbar: Safari and Chrome */
