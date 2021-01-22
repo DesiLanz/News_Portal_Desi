@@ -359,8 +359,8 @@ div[class^="card-"] {
 
   @include media (m){
     display:block;
-    width: 20vw;
-    margin-top: 10.5rem;
+    grid-column: span 3;
+        margin-top: 10.5rem;
   }
     
 }
