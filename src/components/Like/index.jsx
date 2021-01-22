@@ -5,10 +5,9 @@ const Like = ({ start }) => {
   const [count, setCount] = useState(start);
 
   return (
-    <div className="like">
-      <button className="like__btn" onClick={() => setCount(count + 1)}>
-        {count} 
-      </button>
+    <div className="like-desktop" onClick={() => setCount(count + 1)}>
+      <img src="./assets/icons/Like.svg" alt="Herz" />
+      <p className="Mengen">{count}</p>
     </div>
   );
 };
