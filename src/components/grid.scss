@@ -263,7 +263,7 @@ div[class^="card-"] {
 
 .Bild-Teaser {
   grid-column: span 6;
-  margin-left: -5.309734513%;
+  margin-left: -8%; //-5.309734513%
 
   @include media (m) {
       grid-column: span 6;
