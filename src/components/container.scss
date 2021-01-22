@@ -45,6 +45,8 @@ hr {
 .Footer {
   background-color: #2D2C2A;
   margin-top: 5rem;
+  margin-left: 0;
+  margin-right:0;
 }
 form {
   grid-column-start: 1;
@@ -111,7 +113,7 @@ button:hover {
   display: flex;
 
   @include media (m) {
-    margin-top: -6rem;
+    margin-top: -5.2rem;
     justify-content: flex-end;
     margin-bottom: 1rem;
 
@@ -180,6 +182,9 @@ button:hover {
   width: 100%;
   // justify-self: self-end;
   justify-content: flex-end;
+  margin-bottom: 0.5rem;
+  text-align: right;
+  margin-left: 4rem;
 }
 
 .strech {

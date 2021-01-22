@@ -97,6 +97,7 @@ div[class^="card-"] {
 .Teaser{
   grid-column: span 8;
   margin-top: 60px;
+  background-color: 0;
 
 
   @include media (m) {
@@ -158,7 +159,7 @@ div[class^="card-"] {
 
   }
 }
-.like {
+.liken {
   padding-top: 10px;
   grid-column: span 1;
   align-self: flex-end;
